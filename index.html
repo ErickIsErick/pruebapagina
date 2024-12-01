@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agritol</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+</head>
+<body>
+    
+   <!-- Barra de navegación -->
+   <header>
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/logo1.png" alt="Logo de Agritol" class="logo-image">
+            <span>Agritol</span>
+        </div>
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Buscar productor...">
+            <button class="search-btn">Buscar</button>
+        </div>
+        <nav>
+            <a href="#" class="active">Inicio</a>
+            <a href="Productos/Productos.html">Productos</a>
+            <a href="Mis pedidos/pedidos.html">Mis pedidos</a>
+        </nav>
+        <div class="icons">
+            <div class="icon-button user-icon">
+                <i class="fas fa-user"></i>
+                <div class="popup-menu user-menu">
+                    <button class="close-button">x</button>
+                    <h3>Ingresar</h3>
+                   
+                    <form>
+                        <label for="email">Email <span>*</span></label>
+                        <input type="email" id="email" placeholder="Email">
+                        <label for="password">Contraseña <span>*</span></label>
+                        <input type="password" id="password" placeholder="Contraseña">
+                        <button type="submit" class="login-button">Iniciar Sesión</button>
+                    </form>
+                    <div class="extra-links">
+                        <a href="crear_cuenta/crear_cuenta.html">¿Nuevo usuario? <span>Crea una cuenta</span></a>
+                        <a href="contraseña/contraseña.html">¿Olvidaste la contraseña? <span>Recuperar contraseña</span></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="icon-button cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-counter">0</span>
+                <div class="cart-popup">
+                    <button class="close-cart-btn">×</button>
+                    <h2>Carrito de Compras</h2>
+                    <div class="free-shipping-info">
+                        
+                        <div class="shipping-bar">
+                            <span class="progress"></span>
+                        </div>
+                    </div>
+                    <div class="cart-content">
+                        <div class="empty-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Tu carrito está vacío</p>
+                            <button class="return-shop-btn">Volver a la Tienda</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+            
+            
+        </div>
+    </div>
+</header>
+
+
+
+<!-- Contenido del fondo -->
+<section class="hero-background">
+    <div class="hero-content">
+        <h1>Mercado en linea Tolimarket</h1>
+        <p class="hero-slogan">Agricultura en linea, frescura en casa</p>
+        <button class="view-products-btn">Compra ahora</button>
+    </div>
+</section>
+
+
+
+
+<!-- Sección de categorías -->
+<div data-aos="fade-up">
+    <div class="section-container">
+        <div class="categories">
+            <div class="categories-header">
+                <h2>NUESTRAS CATEGORÍAS</h2>
+            </div>
+            <div class="category-cards">
+                <div class="category-card">
+                    <div class="category-image" style="background-image: url('img/comida-sana.png');"></div>
+                    <div class="category-text">
+                        <h3>Frutas</h3>
+                        <p>Disfruta de toda variedad de frutas</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-image" style="background-image: url('img/verduras.png');"></div>
+                    <div class="category-text">
+                        <h3>Verduras</h3>
+                        <p>Las mejores verduraas de todo e tolima</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-image" style="background-image: url('img/patata.png');"></div>
+                    <div class="category-text">
+                        <h3>Tuberculos y legumbres</h3>
+                        <p>Encuentra papas, yuca...</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-image" style="background-image: url('img/maiz.png');"></div>
+                    <div class="category-text">
+                        <h3>Maiz y granos</h3>
+                        <p>Productos de calidad para la mesa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Nueva Sección "Hot Trending" -->
+
+
+<div data-aos="fade-right">
+<div class="section-container">
+    <section class="trending-section">
+        <div class="trending-content">
+            <!-- Mosaico de imágenes con tres elementos -->
+            <div class="trending-images">
+                <div class="image-item large">
+                    <img src="img/img1.jpg" alt="Agricultor 1">
+                </div>
+                <div class="image-item small">
+                    <img src="img/img2.jpg" alt="Agricultor 2">
+                </div>
+                <div class="image-item small">
+                    <img src="img/img6.jpg" alt="Vegetales">
+                </div>
+            </div>
+
+            <!-- Texto creativo -->
+            <div class="trending-text">
+                <p class="trending-subtitle">Calidad Garantizada</p>
+                <h3 class="trending-title">Productos que Marcan la Diferencia</h3>
+                <p class="trending-description">
+                    Nuestros productos agrícolas son cuidadosamente seleccionados para garantizar frescura,
+                    sabor y el mayor valor nutricional. Cada artículo refleja el esfuerzo y dedicación de nuestros agricultores.
+                </p>
+                <ul class="trending-highlights">
+                    <li>🌱 Cultivados de forma sostenible y responsable</li>
+                    <li>🥇 Garantía de frescura y calidad premium</li>
+                    <li>📦 Empaque seguro para mantener la integridad del producto</li>
+                </ul>
+                <a href="#" class="see-all-link">Explorar todos los productos →</a>
+            </div>
+        </div>
+    </section>
+</div>
+</div>
+
+
+
+<!-- Nueva Sección -->
+<div class="section-container">
+    <section class="new-section">
+        <div class="section-header">
+            <h2 class="main-header">NUESTROS SERVICIOS</h2>
+        </div>
+        
+        <!-- Encabezado Secundario -->
+        <div class="sub-header">
+            <h2 class="sub-title">Comprometidos con la calidad, la rapidez y la seguridad de tus pedidos</h2>
+        </div>
+        <div class="feature-cards">
+            <div class="feature-card dark">
+                <div class="feature-icon">
+                    <i class="fi fi-rs-shipping-fast"></i>
+                </div>
+                
+            </div>
+
+            <div class="feature-text">
+                <h3>Entrega Rápida</h3>
+                <p>Recibe tus productos en el menor tiempo posible gracias a nuestra red logística eficiente.</p>
+            </div>
+            <div class="feature-card light">
+                <div class="feature-icon">
+                    <i class="fi fi-rs-box"></i>
+                </div>
+            </div>
+            <div class="feature-text">
+                <h3>Pedido Seguro</h3>
+                <p>Garantizamos un embalaje adecuado para que tus productos lleguen en perfecto estado.</p>
+            </div>
+            <div class="feature-card dark">
+                <div class="feature-icon">
+                    <i class="fi fi-rs-percent-100"></i>
+                </div>
+            </div>
+            <div class="feature-text">
+                <h3>Producto 100% Natural</h3>
+                <p>Disfruta de productos frescos, libres de químicos y cultivados de forma sostenible.</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+ 
+
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Logo y descripción -->
+        <div class="footer-logo-section">
+            <img src="img/logo1.png" alt="Agritol Logo" class="footer-logo-image">
+            <h3>Tolimarket</h3>
+            <p>Productos agrícolas frescos y de alta calidad directamente del campo.</p>
+        </div>
+
+        <!-- Sección de enlaces -->
+        <div class="footer-links-container">
+            <!-- Productos -->
+            <div class="footer-links">
+                <h4>Productos</h4>
+                <ul>
+                    <li><a href="#">Frutas</a></li>
+                    <li><a href="#">Verduras</a></li>
+                    <li><a href="#">Tubérculos</a></li>
+                    <li><a href="#">Granos y Legumbres</a></li>
+                </ul>
+            </div>
+      
+        </div>
+
+        <!-- Contacto -->
+        <div class="footer-contact">
+            <h4>Contáctanos</h4>
+            <ul>
+                <li><strong>Teléfono:</strong> +57 300 123 4567</li>
+                <li><strong>Email:</strong> Tolimarketonline1@gmail.com</li>
+                <li><strong>Ubicación:</strong> Tolima, Colombia</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Línea de separación -->
+    <div class="footer-divider"></div>
+
+    <!-- Parte inferior -->
+    <div class="footer-bottom">
+        <p class="footer-bottom-left">© 2024.</p>
+        <p class="footer-bottom-center">Hecho por Erick Amia y Carlos Yepes</p>
+    </div>
+</footer>
+
+
+
+
+<script src="js/carrito.js" ></script>
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
+
+
+</body>
+</html>
